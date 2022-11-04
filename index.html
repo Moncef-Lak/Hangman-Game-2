@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">  
+    <link rel="stylesheet" href="style.css">
+    <title>HANGMAN GAME</title>
+</head>
+<body>
+    <div class="fakebody">
+        <div class="countiner3" id="countiner3" >
+            <div class="logo" id="logo">
+            <img src="asset/images/Moncef-logo.png"  width="100%" >
+            </div>
+            <div class="row" style="flex-direction: column;font-family: cursive;width: 100%;">
+                <section class="section" id="tahbat">
+                    <h2 id="chabah">
+                        <span>H</span>
+                        <span>A</span>
+                        <span>N</span>
+                        <span>G</span>
+                        <span>M</span>
+                        <span>A</span>
+                        <span>N</span>
+                        <span>-</span>
+                        <span>G</span>
+                        <span>A</span>
+                        <span>M</span>
+                        <span>E</span>
+                    </h2>
+                </section>
+            </div>
+            <div class="blooDiv" id="tatla">
+                <h2> start Game</h2>
+            </div>
+        </div>
+    
+        <div class="countiner6" id="countiner6" >
+            <div class="logo" id="logo" style="background-color: rgba(255, 255, 255, 0.938);">
+                <img src="asset/images/Moncef-logo.png"  width="100%" >
+            </div>
+        </div>
+    
+        <div class="countiner5" id="countiner5" >
+            <div class="text3">
+                <h2>LAKEHAL MONCEF</h2>
+            </div>
+        </div>
+        
+        <div class="countiner4" id="countiner4" >
+            <div class="text2">
+                <h2>MADE BY</h2>
+            </div>
+        </div>
+    
+        <div class="countiner2" id="countiner2" >
+            <div class="text1">
+                <h2>THIS GAME</h2>
+            </div>
+        </div>
+        
+    
+        <div class="count" id="count">
+            <div class="menu" id="menu">
+                <div class="khat"  id="khat"></div>
+            </div>
+            <div class="replay3" id="replay3">
+                <img src="asset/images/replay.png" alt="" width="100%">
+            </div>
+            <div class="next3" id="next3">
+                <img src="asset/images/right-arrow.png" alt="" width="100%">
+            </div>
+            <div class="themes" id="themes">
+                <h2>THEMS : </h2>
+                <div class="img1">
+                    <img src="asset/images/like (1).png" alt=""  width="100%">
+                </div>
+                <div class="img2">
+                    <img src="asset/images/yen3.jpg" alt=""  width="100%">
+                </div>
+                <div class="img3">
+                    <img src="asset/images/Every day is Halloween.jpg" alt=""  width="100%">
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="circle " id="circle">
+            
+            <div class="object1">
+                Score: <span>0</span>
+            </div>
+            <div class="object2">
+                Hello : <span id="name"></span>
+            </div>
+            
+        </div>
+    
+        <div class="winGame" id="winGame">
+            <div class="logo3">
+                <img src="asset/images/Moncef-logo.png" alt="" width="180%">
+            </div>
+            <h2>Winner</h2>
+            <div class="score">
+                Score: <span id="score">0</span>
+            </div>
+            <div class="koulach">
+                <div class="replay" id="replay">
+                    <img src="asset/images/replay.png" alt="" width="100%">
+                </div>
+                <div class="next" id="next">
+                    <img src="asset/images/right-arrow.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="loseGame" id="loseGame">
+            <div class="logo3">
+                <img src="asset/images/Moncef-logo.png" alt="" width="180%">
+            </div>
+            <h2>Loser</h2>
+            <div class="score">
+                Score: <span class="score2">0</span>
+            </div>
+            <div class="koulach">
+                <div class="replay" id="replay2">
+                    <img src="asset/images/replay.png" alt="" width="100%">
+                </div>
+                <div class="next" id="next2">
+                    <img src="asset/images/right-arrow.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="countiner" style="transform: scale(.94);" id="countiner">
+    
+    
+            <div class="row2" id="row2">
+                <div class="hangman-draw" id="hangmanDraw" >
+                    <div class="the-draw">
+
+                        <div class="the-stand"></div>
+                        <div class="the-hang"></div>
+                        <div class="the-kda"></div>
+                        <div class="the-rop"></div>
+                        <div class="the-man">
+                            <div class="head"></div>
+                            <div class="body"></div>
+                            <div class="hands"></div>
+                            <div class="legs"></div>
+                        </div>
+                        <img src="asset/images/Blood-Background-PNG.png" class="blood" id="blood" width="100%">
+                    </div>
+                </div>
+                <div class="all-letters all-letters111" id="placeOfLetters">
+    
+                </div>
+                <div id="sound" style="display: none;">
+
+                    <audio src="asset/audio/win.wav"  preload="auto"></audio>
+                    <audio src="asset/audio/fail.wav"  preload="auto"></audio>
+                    <audio src="asset/audio/win-game.wav"  preload="auto"></audio>
+                    <audio src="asset/audio/scraam.wav"  preload="auto"></audio>
+                    <audio src="asset/audio/mixkit-sad-game-over-trombone-471.wav" preload="auto"></audio>
+                </div>
+
+                </div>
+    
+    
+            <div class="countiner " style="flex-direction:column;">
+                <h2 class="amazing" id="amazing">
+                    word from
+
+                <span class="amazing-1">word from</span>
+                <span class="amazing-2">word from</span>
+                <span class="amazing-3 Fiha">
+                      
+                </span>
+                </h2>
+            </div>
+    
+    
+            <div class="letters2" id="letters2">
+                <div class="letters" id="letters"></div>
+            </div>
+    
+            <div class="niveau" id="niveau"></div>
+        </div>
+
+        <div class="theme1" id="theme1">
+            
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
